@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SmartTravel.GUI
 {
-    public partial class DatVe: Form
+    public partial class QuanLyKhachHang: Form
     {
-        public DatVe()
+        public QuanLyKhachHang()
         {
             InitializeComponent();
         }

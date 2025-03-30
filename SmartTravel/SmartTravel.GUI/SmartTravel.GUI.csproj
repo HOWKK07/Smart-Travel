@@ -58,6 +58,12 @@
     <Compile Include="DangKy.Designer.cs">
       <DependentUpon>DangKy.cs</DependentUpon>
     </Compile>
+    <Compile Include="DangKyTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKyTour.Designer.cs">
+      <DependentUpon>DangKyTour.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +76,11 @@
     <Compile Include="DatPhong.Designer.cs">
       <DependentUpon>DatPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatVe.cs">
+    <Compile Include="FormNguoiDung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatVe.Designer.cs">
-      <DependentUpon>DatVe.cs</DependentUpon>
+    <Compile Include="FormNguoiDung.Designer.cs">
+      <DependentUpon>FormNguoiDung.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -84,6 +90,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDiaDiemDiemThamQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLDiaDiemDiemThamQuan.Designer.cs">
+      <DependentUpon>QLDiaDiemDiemThamQuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKhachSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLKhachSan.Designer.cs">
+      <DependentUpon>QLKhachSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLTaiKhoan.Designer.cs">
+      <DependentUpon>QLTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLTour.Designer.cs">
+      <DependentUpon>QLTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.Designer.cs">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaoLichTrinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,9 +128,6 @@
     </Compile>
     <EmbeddedResource Include="CaiDat.resx">
       <DependentUpon>CaiDat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DatVe.resx">
-      <DependentUpon>DatVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

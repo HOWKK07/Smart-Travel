@@ -26,7 +26,6 @@ namespace SmartTravel.GUI
 
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.btnDatPhong = new System.Windows.Forms.Button();
             this.btnDatVe = new System.Windows.Forms.Button();
             this.txtTimKiemDiemDen = new System.Windows.Forms.TextBox();
@@ -36,11 +35,8 @@ namespace SmartTravel.GUI
             this.btnThemHinhAnhDiaDiemHot = new System.Windows.Forms.Button();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.lblTenTaiKhoan = new System.Windows.Forms.Label();
-
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Main";
-
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
             // 
             // btnDatPhong
             // 
@@ -50,7 +46,6 @@ namespace SmartTravel.GUI
             this.btnDatPhong.TabIndex = 0;
             this.btnDatPhong.Text = "Đặt Phòng";
             this.btnDatPhong.UseVisualStyleBackColor = true;
-
             // 
             // btnDatVe
             // 
@@ -60,19 +55,17 @@ namespace SmartTravel.GUI
             this.btnDatVe.TabIndex = 1;
             this.btnDatVe.Text = "Đặt Vé";
             this.btnDatVe.UseVisualStyleBackColor = true;
-
             // 
             // txtTimKiemDiemDen
             // 
+            this.txtTimKiemDiemDen.ForeColor = System.Drawing.Color.Gray;
             this.txtTimKiemDiemDen.Location = new System.Drawing.Point(50, 100);
             this.txtTimKiemDiemDen.Name = "txtTimKiemDiemDen";
-            this.txtTimKiemDiemDen.Size = new System.Drawing.Size(250, 22);
+            this.txtTimKiemDiemDen.Size = new System.Drawing.Size(250, 20);
             this.txtTimKiemDiemDen.TabIndex = 2;
             this.txtTimKiemDiemDen.Text = "Tìm kiếm điểm đến";
-            this.txtTimKiemDiemDen.ForeColor = System.Drawing.Color.Gray;
             this.txtTimKiemDiemDen.Enter += new System.EventHandler(this.txtTimKiemDiemDen_Enter);
             this.txtTimKiemDiemDen.Leave += new System.EventHandler(this.txtTimKiemDiemDen_Leave);
-
             // 
             // btnTaoLichTrinh
             // 
@@ -82,7 +75,6 @@ namespace SmartTravel.GUI
             this.btnTaoLichTrinh.TabIndex = 3;
             this.btnTaoLichTrinh.Text = "Tạo Lịch Trình";
             this.btnTaoLichTrinh.UseVisualStyleBackColor = true;
-
             // 
             // btnCaiDatTrang
             // 
@@ -92,18 +84,16 @@ namespace SmartTravel.GUI
             this.btnCaiDatTrang.TabIndex = 4;
             this.btnCaiDatTrang.Text = "Cài Đặt Trang";
             this.btnCaiDatTrang.UseVisualStyleBackColor = true;
-
             // 
             // cboNgonNgu
             // 
-            this.cboNgonNgu.Location = new System.Drawing.Point(50, 200);
-            this.cboNgonNgu.Name = "cboNgonNgu";
-            this.cboNgonNgu.Size = new System.Drawing.Size(250, 24);
-            this.cboNgonNgu.TabIndex = 5;
             this.cboNgonNgu.Items.AddRange(new object[] {
             "Tiếng Anh",
             "Tiếng Việt"});
-
+            this.cboNgonNgu.Location = new System.Drawing.Point(50, 200);
+            this.cboNgonNgu.Name = "cboNgonNgu";
+            this.cboNgonNgu.Size = new System.Drawing.Size(250, 21);
+            this.cboNgonNgu.TabIndex = 5;
             // 
             // btnThemHinhAnhDiaDiemHot
             // 
@@ -113,7 +103,6 @@ namespace SmartTravel.GUI
             this.btnThemHinhAnhDiaDiemHot.TabIndex = 6;
             this.btnThemHinhAnhDiaDiemHot.Text = "Thêm Hình Ảnh Địa Điểm Hot";
             this.btnThemHinhAnhDiaDiemHot.UseVisualStyleBackColor = true;
-
             // 
             // btnDangNhap
             // 
@@ -124,7 +113,6 @@ namespace SmartTravel.GUI
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-
             // 
             // lblTenTaiKhoan
             // 
@@ -133,10 +121,23 @@ namespace SmartTravel.GUI
             this.lblTenTaiKhoan.Size = new System.Drawing.Size(200, 20);
             this.lblTenTaiKhoan.TabIndex = 8;
             this.lblTenTaiKhoan.TextAlign = System.Drawing.ContentAlignment.TopRight;
-
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(491, 269);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btnDatPhong);
             this.Controls.Add(this.btnDatVe);
             this.Controls.Add(this.txtTimKiemDiemDen);
@@ -147,6 +148,10 @@ namespace SmartTravel.GUI
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.lblTenTaiKhoan);
             this.Name = "Main";
+            this.Text = "it ";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         private void txtTimKiemDiemDen_Enter(object sender, EventArgs e)
@@ -174,5 +179,7 @@ namespace SmartTravel.GUI
             string tenTaiKhoan = "User1";
             lblTenTaiKhoan.Text = "Xin chào, " + tenTaiKhoan;
         }
+
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -50,7 +50,9 @@ namespace SmartTravel.GUI
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDatPhong
@@ -257,6 +259,7 @@ namespace SmartTravel.GUI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Location = new System.Drawing.Point(146, 346);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
@@ -272,6 +275,15 @@ namespace SmartTravel.GUI
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 23;
             this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(123, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "label6";
             // 
             // Main
             // 
@@ -305,6 +317,8 @@ namespace SmartTravel.GUI
             this.Name = "Main";
             this.Text = "it ";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,5 +365,6 @@ namespace SmartTravel.GUI
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

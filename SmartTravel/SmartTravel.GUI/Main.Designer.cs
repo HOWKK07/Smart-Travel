@@ -51,6 +51,7 @@ namespace SmartTravel.GUI
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -285,11 +286,21 @@ namespace SmartTravel.GUI
             this.label6.TabIndex = 0;
             this.label6.Text = "label6";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(710, 137);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "label7";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
@@ -366,5 +377,6 @@ namespace SmartTravel.GUI
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
